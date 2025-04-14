@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPOSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="login-form">
+            <h2>Login Form</h2>
+            <div class="input-field">
+                <input type="email" id="email" required>
+                <label>Enter email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" required>
+                <label>Enter password</label>
+            </div>
+            <div class="forget">
+                <label for="save-login">
+                    <input type="checkbox" id="save-login">
+                    <p>Save login information</p>
+                </label>
+                <a href="#" id="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit">Log In</button>
+            <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+
+        </form>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script src="firebase-config.js" defer type="module"></script>
+    <script src="auth.js" defer type="module"></script>
+</body>
+
+</html>
